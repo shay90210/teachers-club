@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    
+    <link rel="stylesheet" href="styles/style.css" />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm sticky-top pt-4 pb-4 navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTeacherContent" aria-controls="navbarTeacherContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTeacherContent">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home"> HOME</i></a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-info"> ABOUT</i></a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html"><i class="fa fa-shopping-cart"> SHOP</i></a></li>
+                <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-address-card"> CONTACT</i></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <i class="fa fa-shopping-bag"></i> Cart
+                        <span id="cartAmount" class="cartAmount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <img class="brandLogo" src="img/brandLogo2.png" width="250px" alt="Image of brand logo" />
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="mt-4 mb-4">Contact Us</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-title">
+                        <p class="mt-3 mb-3">Do you have a question, need help with an order, or just want to say hello? Send Us a Message!</p>
+                        <p>Information is *REQUIRED to submit form.</p>
+                    </div>
+                    <form action="post">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">* Last Name</label>
+                                <input class="form-control" type="text" name="lastName" id="lastName" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">* First Name</label>
+                                <input class="form-control" type="text" name="firstName" id="firstName" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailAdress" class="form-label">* Email</label>
+                                <input class="form-control" type="email" name="emailAddress" id="emailAddress" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                <input class="form-control" type="tel" name="phoneNumber" id="phoneNumber" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="Message" class="form-label">* Message</label>
+                                <textarea class="form-control" name="message" id="message" cols="60" rows="10" required></textarea>
+                            </div>
+                            <button type="button" class="btn btn-secondary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 pb-3 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Follow us on social Media</h4>
+                    <ul class="nav social-media">
+                        <li class="nav-item"><a href="https://www.facebook.com/teachersclubaccess/"><i class="fa fa-facebook"></i></a></li>
+                        <li class="nav-item"><a href="https://www.instagram.com/teachersclubaccess/"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="ml-3">Site Map</h4>
+                    <nav>
+                        <ul class="nav d-block">
+                            <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home"> HOME</i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-info"> ABOUT</i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="shop.html"><i class="fa fa-shopping-cart"> SHOP</i></a></li>
+                            <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-address-card"> CONTACT</i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div class="row">
+                <div class="col">
+                    <p>&copy; 2022, The Teachers' Club Powered by Shopify</p>
+                </div>
+                <div class="col"> 
+                    <a href="https://www.shift4shop.com/credit-card-logos.html">
+                        <img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-sm-5.png" width="249" height="28" border="0" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/cart.js"></script>
+    
+</body>
+</html>

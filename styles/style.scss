@@ -1,0 +1,302 @@
+//Color Scheme ------------------------------------------------------------
+$color-purple: #702283;
+$color-purple2: #9381ff;
+$color-mintgreen: #76b39d;
+$color-brown1: #583101;
+$color-brown2: #6f4518;
+$color-brown3: #a47148;
+$color-brown4: #d4a276;
+$color-brown5: #f3d5b5;
+$color-offblack: #0a0908;
+$color-offwhite: #f2f4f3;
+$color-blue: #03045e;
+
+// FONT Sizes -------------------------------------------------------------
+$header1-font-size: 72px;
+$header2-font-size: 48px;
+$header3-font-size: 32px;
+$header4-font-size: 26px;
+$header5-font-size: 18px;
+$paragraph-font-size: 20px;
+$paragraph2-font-size: 16px;
+
+
+// Global Styling ---------------------------------------------------------
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-size: $header1-font-size;
+}
+
+h2 {
+    font-size: $header2-font-size;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: $header3-font-size;
+    font-weight: bold;
+}
+
+p {
+    font-size: $paragraph-font-size;
+}
+
+a {
+    color: $color-blue;
+}
+
+a:hover {
+    color: $color-purple;
+}
+
+// Shop Page --------------------------------------------------------------
+.shop {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 224px);
+    gap: 70px;
+    justify-content: center;
+}
+
+.shop {
+    h5 {
+        font-size: $header5-font-size;
+        font-weight: bolder;
+    };
+    p {
+        font-size: $paragraph2-font-size;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 224px);
+    }
+}
+
+@media (max-width:500px) {
+    .shop {
+        grid-template-columns: repeat(1, 224px);
+    }
+}
+
+.item {
+    border: 2px solid $color-offblack;
+    border-radius: 4px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: $paragraph2-font-size;
+}
+
+// Navigation Bar ---------------------------------------------------------
+nav {
+    background: $color-brown5;
+}
+
+// Header -----------------------------------------------------------------
+header {
+    h1, p {
+    text-align: center;
+}
+}
+
+header {
+    p {
+        margin-bottom: 60px;
+    }
+}
+
+.brandLogo {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+// Homepage Carousel ------------------------------------------------------
+.carousel-item {
+    max-width: 100%;
+    height: 500px;
+}
+
+.carousel-caption {
+    h4 {
+    font-size: $header3-font-size;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    color: $color-blue;
+    }
+}
+
+.carousel-caption {
+    p {
+        font-weight: bold;
+        margin-bottom: 100px;
+        color: $color-blue;
+    }
+}
+
+// ABOUT PAGE -------------------------------------------------------------
+.profile {
+    font-size: $paragraph2-font-size;
+}
+
+#accordion {
+    margin-top: 80px;
+}
+
+#accordion {
+    p {
+        font-size: $paragraph2-font-size;
+    }
+}
+
+// CONTACT ----------------------------------------------------------------
+.card-title {
+    p {
+        text-align: center;
+        font-size: $paragraph2-font-size;
+        font-weight: bold;
+    }
+}
+
+label {
+    font-weight: bold;
+}
+
+
+// FOOTER -----------------------------------------------------------------
+footer {
+    background-color: $color-brown5;
+}
+
+footer {
+    h4 {
+        margin-top: 20px;
+        font-weight: bolder;
+    }
+}
+
+footer {
+    a {
+        color: $color-blue;
+    }
+}
+
+.social-media {
+    i {
+        font-size: $header4-font-size;
+        margin-left: px;
+        padding-top: 10px;
+        padding-right: 20px;
+    }
+}
+
+footer {
+    p {
+        font-size: $paragraph2-font-size;
+    }
+}
+
+// Shopping cart styling buttons -----------------------------------------------
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .HomeBtn {
+        background-color: $color-offblack;
+        color: white;
+        border: none;
+        padding: 6px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+}
+
+.checkout {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.removeAll {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+// Style rules for shopping cart ------------------------------------------------
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 20px;
+}
+
+// Style rules for cart item -----------------------------------------------------
+.cart-item {
+    border: 2px solid $color-offblack;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.title-price-x {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.cart-item-price {
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+    font-weight: bold;
+}
